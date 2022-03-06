@@ -13,7 +13,7 @@ export default function Box({text, onPress, source, subtext}){
         style={styles.btn}
         onPress={onPress} 
       >
-        <Text style={styles.btntext}>Donate Now</Text>
+        <Text style={styles.btntext}>Donate</Text>
       </TouchableOpacity>
     </ImageBackground>
 </>
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 25,
     marginTop: 10,
-    marginLeft: 8,
+    marginLeft: 10,
 
   },
   image: {
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginLeft: 10,
     marginRight: 10,
+    opacity: 0.95,
 
   },
   subtext:{

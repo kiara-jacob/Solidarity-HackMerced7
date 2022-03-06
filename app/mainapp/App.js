@@ -22,7 +22,6 @@ export default function App() {
         <Stack.Screen name='Covid Crisis' component={CovidScreen}/>
         <Stack.Screen name='Afghanistan Crisis' component={AfghanistanScreen}/>
         <Stack.Screen name='Climate Crisis' component={ClimateScreen}/>
-        <Stack.Screen name='User Login' component={UserLogin}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

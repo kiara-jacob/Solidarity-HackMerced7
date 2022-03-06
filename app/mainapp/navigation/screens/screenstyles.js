@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginLeft: 10,
     marginRight: 10,
+    opacity: 0.8
     
   },
 
@@ -42,16 +43,16 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: 300,
     height: 80,
-    marginTop: 85,
+    marginTop: 40,
     alignItems: 'center',
     marginLeft: 60,
   },
   ngo:{
     marginLeft: 10,
     marginTop: 5,
-    backgroundColor: '#caf0f8',
-    padding:8,
-    marginVertical: 8,
+    backgroundColor: '#219ebc',
+    padding:4,
+    marginVertical: 5,
     marginHorizontal: 3,
     borderRadius: 15,
     fontWeight: "bold",
@@ -72,11 +73,14 @@ const styles = StyleSheet.create({
     borderColor:'black',
     alignItems:'center',
     justifyContent:'center',
+    marginTop: 3,
+    marginBottom: 10,
     marginLeft: 320,
     width:50,
     height:50,
     backgroundColor:'white',
     borderRadius:50,
+    fontFamily: 'GothamMedium',
   },
 })
 

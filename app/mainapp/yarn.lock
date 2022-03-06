@@ -1066,6 +1066,11 @@
   resolved "https://registry.npmjs.org/@expo-google-fonts/inter/-/inter-0.2.2.tgz"
   integrity sha512-dU6mSczI2xkRZbUhQQ5VB+D4AqLOF8ufCIfA1iBjrPZ/Qnka88E5Ez2Mvm41exdKR76norVvYD5GJIQYEEoO/Q==
 
+"@expo-google-fonts/playfair-display@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/playfair-display/-/playfair-display-0.2.2.tgz#03a4ec9646d98470503f9465564d49119715c6c4"
+  integrity sha512-l/zJKImGAPu6yfFNk1jqcDgQuI9IKmVXWOG8Ci7g5i/E4VgAX9ScMf1KaX5+BAbjlu4w3GUzqHsb8aiFZjHgiw==
+
 "@expo-google-fonts/raleway@^0.2.2":
   version "0.2.2"
   resolved "https://registry.npmjs.org/@expo-google-fonts/raleway/-/raleway-0.2.2.tgz"

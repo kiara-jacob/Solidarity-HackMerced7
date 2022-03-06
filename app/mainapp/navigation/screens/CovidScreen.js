@@ -1,4 +1,4 @@
-import { View, Text, FlatList,Image,StyleSheet, ImageBackground ,TouchableOpacity} from 'react-native'
+import { View, Text, FlatList,Image,StyleSheet, ImageBackground,Linking ,TouchableOpacity} from 'react-native'
 import React from 'react'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import Header from '/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/components/Header.js';
@@ -12,7 +12,7 @@ export default function COVIDScreen() {
       <Header />
       <View>
         <ImageBackground source={require("/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/assets/covid.png")} style={styles.image} imageStyle={{ borderRadius: 18 }}>
-          <Text style={styles.text}> HELP SUPPORT THOSE AFFECTED BY THE CRISIS IN UKRAINE</Text>
+          <Text style={styles.text}> The pandemic rocked the very foundations upon which we as humans live and interact. While things start to go back to normal a lot of people have found themselves in dire need of help.</Text>
           <View style={styles.twobtns}>
             <TouchableOpacity style={styles.button}>
               <Text style={styles.btntext}>INFO</Text>
@@ -47,18 +47,22 @@ const ngodata = [
   {
     ngoname: "World Health Organization",
     ngoinfo:"WHO is leading a Covid-19 Solidarity Response Fund to coordinate global efforts",
+    url: "https://covid19responsefund.org/en/ ",
   },
 
   {
     ngoname :'Direct Relief',
     ngoinfo:'Their teams have provided 12+ million vaccines, 3 billion dollars in medical aid, and lots more to countries around the world.',
+    url: "https://www.directrelief.org/emergency/coronavirus-outbreak/",
   },
   {
     ngoname:'UNICEF',
     ngoinfo:'Millions of children and families have received vaccines, nutrition, education, social protection services, and necessities through UNICEF.',
+    url: "https://www.unicef.org/coronavirus/donors-and-partners",
   },
   {
     ngoname:'World Vision',
     ngoinfo:'The World Vision team have reached 72 million people in need providing emergency food, personal protective equipment, hand washing supplies, and hygiene kits.',
+    url: "https://www.worldvision.org/ ",
   },
 ];

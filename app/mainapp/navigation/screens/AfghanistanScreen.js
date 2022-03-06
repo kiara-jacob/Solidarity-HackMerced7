@@ -1,4 +1,4 @@
-import { View, Text, FlatList,Image,StyleSheet, ImageBackground ,TouchableOpacity} from 'react-native'
+import { View, Text, FlatList,Image,StyleSheet,Linking, ImageBackground ,TouchableOpacity} from 'react-native'
 import React from 'react'
 import styles from '/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/navigation/screens/screenstyles.js';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
@@ -13,7 +13,7 @@ export default function AfghanistanScreen() {
       <Header />
       <View>
         <ImageBackground source={require("/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/assets/afghanistan.png")} style={styles.image} imageStyle={{ borderRadius: 18 }}>
-          <Text style={styles.text}> HELP SUPPORT THOSE AFFECTED BY THE CRISIS IN UKRAINE</Text>
+          <Text style={styles.text}> Beyond the gender-based discrimination, Afghanistan is dealing with a humanitarian crisis, with almost 700,000 people internally displaced due to conflict and disaster</Text>
           <View style={styles.twobtns}>
             <TouchableOpacity style={styles.button}>
               <Text style={styles.btntext}>INFO</Text>
@@ -49,18 +49,22 @@ const ngodata = [
   {
     ngoname: "Save the Children",
     ngoinfo:"Recently, Save the Children has restarted their programs providing mobile health and nutrition teams to children and their families.",
+    url: "https://www.savethechildren.org/us/where-we-work/afghanistan",
   },
 
   {
     ngoname :'UNICEF',
     ngoinfo:'UNICEF is currently advocating for children rights and education rights in Afghanistan. They also have provided necessities to over 1.7 million children and families in need.',
+    url: "https://www.unicef.org.uk/donate/donate-and-help-protect-children-in-afghanistan/ ",
   },
   {
     ngoname:'Women for Afghan Women',
     ngoinfo:'WAW have helped over 1.6 million refugees and evacuees settle into their new lives in the U.S. Recently, their programs have had a 300% increase in requests after NATO troops withdrew from Afghanistan.',
+    url: "https://womenforafghanwomen.org/",
   },
   {
     ngoname:'The UN Refugee Agency',
     ngoinfo:'With temperatures in Afghanistan decreasing, the UNHCR is providing displaced families with emergency support and planning to deliver solar panels and winter insulation.',
+    url: "https://donate.unhcr.org/int/en/afghanistan-situation-v1 ",
   },
 ];
