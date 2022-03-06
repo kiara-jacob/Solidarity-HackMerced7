@@ -22,6 +22,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginRight: 10,
     backgroundColor: '#219ebc',
+    borderRadius: 15,
+    shadowColor: '#171717',
+    shadowOffset: {width: -4, height: 4},
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
   },
   text:{
     color:'white',

@@ -33,7 +33,7 @@ export default function AfghanistanScreen() {
             return(
               <View style={styles.ngo}>
                 <Text style={styles.ngo}>{item.ngoname}{'\n'}{item.ngoinfo}</Text>
-                <TouchableOpacity style={styles.icon}>
+                <TouchableOpacity style={styles.icon} onPress={ ()=> {Linking.openURL(item.url) }}>
                   <MaterialCommunityIcons  name="hand-heart" size={30} color="black"/>
                 </TouchableOpacity>
               </View>

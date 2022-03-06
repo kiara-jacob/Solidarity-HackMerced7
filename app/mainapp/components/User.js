@@ -4,9 +4,10 @@ import Icon from 'react-native-vector-icons'
 import { Ionicons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons'; 
 
-export default function User() {
+
+export default function User({navigation}) {
   return (
-    <TouchableOpacity style={styles.userbtn}>
+    <TouchableOpacity style={styles.userbtn} >
       <AntDesign name="user" size={18} color="white" />
       <Text style={{color:"white"}}>user</Text>
     </TouchableOpacity>

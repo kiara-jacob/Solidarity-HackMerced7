@@ -16,8 +16,7 @@ import SafeViewAndroid from "/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainap
 export default function HomeScreen({navigation}) {
   return (
     <SafeAreaProvider style={SafeViewAndroid.AndroidSafeArea}>
-      <Header />
-      <Infoblock/>
+      <Header/>
       <View style={{flex: 1}}>
         <ScrollView style={{padding: 10, marginBottom: 30}}>
           <Box text={items[0].text} source={items[0].image} subtext={items[0].subtext} onPress={()=> navigation.navigate('Ukraine Crisis')}/>
