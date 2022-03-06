@@ -4,11 +4,10 @@ import Icon from 'react-native-vector-icons'
 
 export default function User() {
   return (
-    <View style={styles.userbtn}>
-      <TouchableOpacity>
-        <Text style={{color:"white"}}>user</Text>
-      </TouchableOpacity>
-    </View>
+    <TouchableOpacity style={styles.userbtn}>
+      <Text style={{color:"white"}}>user</Text>
+    </TouchableOpacity>
+
   )
 }
 
@@ -19,8 +18,9 @@ const styles = StyleSheet.create({
     alignItems:'center',
     justifyContent:'center',
     marginLeft: 10,
-    width:70,
-    height:70,
+    marginTop: 10,
+    width:60,
+    height:60,
     backgroundColor:'black',
     borderRadius:50,
   },

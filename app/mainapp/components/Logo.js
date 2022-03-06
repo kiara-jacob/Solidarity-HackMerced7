@@ -6,10 +6,8 @@ import React from 'react'
 
 export default function Logo() {
   return (
-    <View >
-      <TouchableOpacity style={styles.logo}>
-        <Text>LOGO</Text>
-      </TouchableOpacity>
+    <View style={styles.logo}>
+      <Text>LOGO</Text>
     </View>
   )
 };

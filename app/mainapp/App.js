@@ -1,53 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import {React, useEffect} from 'react';
-import { StyleSheet, Text, View, SafeAreaView, ScrollView, Platform } from 'react-native';
-import Header from './components/Header';
-import Box from './components/Box';
-import Logo from './components/Logo';
-import Infoblock from './components/Infoblock';
-import SafeViewAndroid from "./components/SafeViewAndroid";
+import React from 'react';
+import HomeScreen from '/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/navigation/screens/HomeScreen.js';
+import UkraineScreen from '/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/navigation/screens/UkraineScreen.js';
+import CovidScreen from '/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/navigation/screens/CovidScreen.js';
+import AfghanistanScreen from '/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/navigation/screens/AfghanistanScreen.js';
+import ClimateScreen from '/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/navigation/screens/ClimateScreen.js';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-//HEADER IS DONE for main page. User and Logo are the options for it
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <SafeAreaView style={SafeViewAndroid.AndroidSafeArea}>
-      <Header />
-      <Infoblock/>
-      <View style={{flex:1}}>
-        <ScrollView >
-          <Box text={items[0].text} source={items[0].image} subtext={items[0].subtext} />
-          <Box source={items[1].image} text= {items[1].text} subtext={items[1].subtext} />
-          <Box source={items[2].image} text= {items[2].text} subtext={items[2].subtext} />
-          <Box source={items[3].image} text= {items[3].text} subtext={items[3].subtext}/>
-        </ScrollView>
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Home'>
+        <Stack.Screen name='Home' component={HomeScreen}/>
+        <Stack.Screen name='Ukraine Crisis' component={UkraineScreen}/>
+        <Stack.Screen name='Covid Crisis' component={CovidScreen}/>
+        <Stack.Screen name='Afghanistan Crisis' component={AfghanistanScreen}/>
+        <Stack.Screen name='Climate Crisis' component={ClimateScreen}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
-
-const items = [
-  {
-    image: require("/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/assets/ukraine.png"),
-    text: "Ukraine Crisis",
-    subtext: "Help support those affected by the war",
-  },
-  {
-    image: require("/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/assets/covid.png"),
-    text: "COVID-19 Crisis",
-    subtext: "Help support those affected by the pandemic",
-  },
-  {
-    image: require("/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/assets/afghanistan.png"),
-    text: "Crisis in Afghanistan",
-    subtext: "Help support those affected by the war",
-  },
-  {
-    image: require("/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/assets/climate.png"),
-    text: "Climate Change Crisis",
-    subtext: "Help save the planet",
-  },
-
-];
-
+};

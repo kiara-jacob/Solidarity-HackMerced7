@@ -1,19 +1,22 @@
 //this is the box for the different crisis's and is a reusable component.
 
-import { StyleSheet, Text, TouchableOpacity, View, ImageBackground } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View, ImageBackground, Button } from 'react-native'
 import React from 'react'
 
 
 export default function Box({text, onPress, source, subtext}){
   return (
-    <View style={styles.image}>
-      <TouchableOpacity onPress={onPress}>
-        <ImageBackground source={source} style={styles.image} imageStyle={{ borderRadius: 18}} >
-          <Text style={styles.text}>{text}</Text>
-          <Text style={styles.subtext}>{subtext}</Text>
-        </ImageBackground>
+    <><ImageBackground source={source} style={styles.image} imageStyle={{ borderRadius: 18 }}>
+      <Text style={styles.text}>{text}</Text>
+      <Text style={styles.subtext}>{subtext}</Text>
+      <TouchableOpacity
+        style={styles.btn}
+        onPress={onPress} 
+      >
+        <Text style={styles.btntext}>Donate Now</Text>
       </TouchableOpacity>
-    </View>
+    </ImageBackground>
+</>
   )
 }
 
@@ -40,6 +43,20 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: 5,
     marginLeft: 8,
-  }
+  },
+  btn: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 5,
+    width: 110,
+    marginTop: 85,
+    marginLeft: 270,
+    borderRadius: 30,
+    backgroundColor: 'white',
+  },
+  btntext:{
+    color: "black",
+    fontSize: 17,
+  },
 });
 
