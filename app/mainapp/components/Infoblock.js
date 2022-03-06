@@ -17,10 +17,10 @@ export default function Infoblock() {
 const styles = StyleSheet.create({
   info: {
     height: 70,
-    width: '95%',
+    width: 380,
     marginTop: 10,
-    marginLeft: 10,
-    marginRight: 10,
+    marginLeft: 24,
+    marginRight: 5,
     backgroundColor: 'grey',
     borderRadius: 10,
   },

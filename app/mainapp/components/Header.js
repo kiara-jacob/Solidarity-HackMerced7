@@ -6,7 +6,7 @@ import User from './User'
 // const styles=StyleSheet.create()
 export default function Header() {
   return (
-    <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+    <View style={{flexDirection: 'row', justifyContent: 'space-between' , marginLeft: 10, marginRight:10,}}>
       <User />
       <Logo />
     </View>

@@ -6,6 +6,10 @@ import AfghanistanScreen from '/Users/kiarajacob/HACKMERCED/HackMerced7/app/main
 import ClimateScreen from '/Users/kiarajacob/HACKMERCED/HackMerced7/app/mainapp/navigation/screens/ClimateScreen.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import AppLoading from 'expo-app-loading';
+import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
+
+
 
 const Stack = createNativeStackNavigator();
 
