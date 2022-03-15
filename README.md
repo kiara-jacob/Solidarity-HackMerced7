@@ -38,7 +38,7 @@ We learned coding in React Native, making mockups in Figma, working with the Twi
 In the near future we hope to expand the app to provide services for people in crisis including shelter support, government directives in case of emergency and information on what you can do if you find yourself in need of this help.
 We truly feel that our app can make a difference and we hope that you stand in solidarity with us to build a brighter future! 
 
-## Images of the Set Up
+## Images of the Project
 
 <img width="610" alt="Screenshot 2022-03-15 at 12 14 20 PM" src="https://user-images.githubusercontent.com/64074709/158322041-c8f39669-1593-4cc4-b05b-b6abbad12c41.png">
 <img width="422" alt="Screenshot 2022-03-15 at 12 14 28 PM" src="https://user-images.githubusercontent.com/64074709/158322080-7f5ab327-7b11-4080-b54d-e61875ba793c.png">
